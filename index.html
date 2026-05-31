@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oral Storytelling in India</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&amp;family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <style>body { box-sizing: border-box; }</style>
+ </head>
+
+<body class="h-full">
+    <div class="app-wrapper" id="appWrapper">
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <nav class="nav-dots" id="navDots">
+      <div class="nav-dot active" data-section="0" title="Once Upon a Time..."></div>
+      <div class="nav-dot" data-section="1" title="Folk Tales"></div>
+      <div class="nav-dot" data-section="2" title="Great Epics"></div>
+      <div class="nav-dot" data-section="3" title="Songs &amp; Ballads"></div>
+      <div class="nav-dot" data-section="4" title="Theater &amp; Dance"></div>
+      <div class="nav-dot" data-section="5" title="Modern Stories"></div>
+      <div class="nav-dot" data-section="6" title="The End"></div>
+    </nav>
+    <section class="landing-section" id="landingSection">
+      <div class="landing-bg"></div>
+      <div class="mandala-container">
+      <div class="mandala-glow-ring"></div>
+      <div class="mandala-outer-ring"></div>
+      <div class="mandala-inner-ring"></div>
+      <div class="storyteller-orbit">
+        <div class="storyteller-icon" title="Kathakali">
+        🎭
+        </div>
+        <div class="storyteller-icon" title="Ramlila">
+        🎪
+        </div>
+        <div class="storyteller-icon" title="Harikatha">
+        🎵
+        </div>
+        <div class="storyteller-icon" title="Baul">
+        🪕
+        </div>
+        <div class="storyteller-icon" title="Shadow Puppet">
+        🎬
+        </div>
+        <div class="storyteller-icon" title="Folk Tales">
+        📖
+        </div>
+      </div>
+      
+      <div class="mandala-pattern">
+        <svg viewbox="0 0 400 400" fill="none">
+        <circle cx="200" cy="200" r="180" stroke="currentColor" stroke-width="0.5" fill="none" style="color: var(--color-primary)" /> <circle cx="200" cy="200" r="150" stroke="currentColor" stroke-width="0.5" fill="none" style="color: var(--color-primary)" /> <circle cx="200" cy="200" r="120" stroke="currentColor" stroke-width="0.5" fill="none" style="color: var(--color-primary)" /> <circle cx="200" cy="200" r="90" stroke="currentColor" stroke-width="0.5" fill="none" style="color: var(--color-primary)" /> <circle cx="200" cy="200" r="60" stroke="currentColor" stroke-width="0.5" fill="none" style="color: var(--color-primary)" /> <g style="color: var(--color-primary)">
+          <path d="M200 20 L200 380" stroke="currentColor" stroke-width="0.3" />
+          <path d="M20 200 L380 200" stroke="currentColor" stroke-width="0.3" />
+          <path d="M72 72 L328 328" stroke="currentColor" stroke-width="0.3" />
+          <path d="M328 72 L72 328" stroke="currentColor" stroke-width="0.3" />
+        </g> <g transform="rotate(22.5 200 200)" style="color: var(--color-primary)">
+          <path d="M200 20 L200 380" stroke="currentColor" stroke-width="0.3" />
+          <path d="M20 200 L380 200" stroke="currentColor" stroke-width="0.3" />
+        </g> <g transform="rotate(45 200 200)" style="color: var(--color-primary)">
+          <path d="M200 50 L200 350" stroke="currentColor" stroke-width="0.3" />
+          <path d="M50 200 L350 200" stroke="currentColor" stroke-width="0.3" />
+        </g>
+        </svg>
+      </div>
+      <div class="particles-container" id="particlesContainer"></div>
+      </div>
+      <div style="position: absolute; bottom: 15%; width: 100%; display: flex; gap: 4rem; justify-content: center; pointer-events: none;">
+      <div class="floating-words">
+        कथा
+      </div>
+      <div class="floating-words">
+        वर्स
+      </div>
+      <div class="floating-words">
+        ✦
+      </div>
+      <div class="floating-words">
+        कथा
+      </div>
+      <div class="floating-words">
+        वर्स
+      </div>
+      </div>
+      <div class="title-container">
+      <h1 class="group-title font-display" id="groupName">कथावर्स</h1>
+      <p class="tagline font-body" id="tagline">Journey Through India's Storytelling Traditions</p><button class="enter-btn font-body" id="enterBtn"><span>✦ Begin the Journey 🎭</span></button>
+      </div>
+    </section>
+
+    <main class="main-content" id="mainContent">
+      <section class="story-section section-intro" data-index="0">
+      <div class="section-inner">
+        <span class="section-number font-display">01</span>
+        <div class="section-content fade-in">
+        <svg class="section-icon" viewbox="0 0 80 80" fill="none">
+          <circle cx="40" cy="40" r="35" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <path d="M40 15 L40 40 L55 50" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" /> <circle cx="40" cy="40" r="4" fill="var(--color-primary)" /> <path d="M25 60 Q40 70 55 60" stroke="var(--color-primary)" stroke-width="2" fill="none" />
+        </svg>
+        <h2 class="section-title font-display" id="introTitle">Once Upon a Time, In Ancient India...</h2>
+        <p class="section-description font-body" id="introText">For thousands of years, under starlit skies and around flickering fires, storytellers have woven the fabric of Indian civilization. These are not mere tales—they are the living memory of cultures, passed through countless generations by grandmothers' voices, village elders' wisdom, wandering bards, and sacred performers. Come, sit close, and let us take you through the enchanting world of India's oral traditions.</p>
+        <!-- <button class="watch-btn font-body">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3" />
+          </svg> Watch Video </button> -->
+        </div>
+      </div>
+      </section>
+    
+      <section class="story-section section-folk" data-index="1">
+      <div class="section-inner">
+        <span class="section-number font-display">02</span>
+        <div class="section-content fade-in">
+        <svg class="section-icon" viewbox="0 0 80 80" fill="none">
+          <path d="M20 60 L20 30 Q20 20 30 20 L50 20 Q60 20 60 30 L60 60" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <path d="M15 60 L65 60" stroke="var(--color-primary)" stroke-width="2" /> <circle cx="40" cy="35" r="8" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <path d="M35 50 L45 50" stroke="var(--color-primary)" stroke-width="2" /> <path d="M10 65 Q40 75 70 65" stroke="var(--color-primary)" stroke-width="1.5" fill="none" />
+        </svg>
+        <h2 class="section-title font-display">The Folk Tales — Wisdom of the Village Square</h2>
+        <p class="section-description font-body">In the warm glow of oil lamps, village storytellers have enchanted audiences with tales of clever animals, wise fools, and magical interventions. From the Panchatantra's timeless fables to the heart-warming folk tales of Kerala's Vadakkan Pattukal, these stories are moral lessons wrapped in wonder, teaching us how to navigate the world through imagination and heart.</p><button class="watch-btn font-body">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3" />
+          </svg> Watch Video </button>
+        </div>
+      </div>
+      </section>
+    
+      <section class="story-section section-epic" data-index="2">
+      <div class="section-inner">
+        <span class="section-number font-display">03</span>
+        <div class="section-content fade-in">
+        <svg class="section-icon" viewbox="0 0 80 80" fill="none">
+          <path d="M40 10 L50 30 L70 30 L55 45 L60 70 L40 55 L20 70 L25 45 L10 30 L30 30 Z" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <circle cx="40" cy="38" r="6" fill="var(--color-primary)" opacity="0.3" />
+        </svg>
+        <h2 class="section-title font-display">The Great Epics — Gods, Heroes &amp; Destiny</h2>
+        <p class="section-description font-body">The Ramayana and Mahabharata live not in ancient scrolls, but in the passionate voices of countless performers. Through Harikatha's lyrical recitations in the South, Ramlila's grand spectacles in the North, and regional traditions across the land, these cosmic tales of dharma, love, sacrifice, and duty continue to shape the moral and spiritual imagination of millions.</p><button class="watch-btn font-body">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3" />
+          </svg> Watch Video </button>
+        </div>
+      </div>
+      </section>
+    
+      <section class="story-section section-ballads" data-index="3">
+      <div class="section-inner">
+        <span class="section-number font-display">04</span>
+        <div class="section-content fade-in">
+        <svg class="section-icon" viewbox="0 0 80 80" fill="none">
+          <ellipse cx="25" cy="55" rx="12" ry="8" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <path d="M37 55 L37 20" stroke="var(--color-primary)" stroke-width="2" /> <path d="M37 20 Q50 15 55 25 Q60 35 50 40" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <circle cx="58" cy="30" r="3" fill="var(--color-primary)" /> <circle cx="62" cy="40" r="2" fill="var(--color-primary)" /> <circle cx="65" cy="50" r="2" fill="var(--color-primary)" />
+        </svg>
+        <h2 class="section-title font-display">Songs &amp; Ballads — When Stories Sing</h2>
+        <p class="section-description font-body">Where words merge with melody, storytelling transcends into pure art. The Bauls of Bengal sing of divine love in haunting devotion, the Manganiyars of Rajasthan carry centuries of desert tales through their voices, and Lavani performers blend narrative with dance that makes the earth itself move. These musical traditions transform stories into experiences that touch both heart and soul.</p><button class="watch-btn font-body">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3" />
+          </svg> Watch Video </button>
+        </div>
+      </div>
+      </section>
+    
+      <section class="story-section section-performance" data-index="4">
+      <div class="section-inner">
+        <span class="section-number font-display">05</span>
+        <div class="section-content fade-in">
+        <svg class="section-icon" viewbox="0 0 80 80" fill="none">
+          <circle cx="40" cy="25" r="10" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <path d="M40 35 L40 50" stroke="var(--color-primary)" stroke-width="2" /> <path d="M25 45 L40 40 L55 45" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <path d="M35 50 L30 70" stroke="var(--color-primary)" stroke-width="2" /> <path d="M45 50 L50 70" stroke="var(--color-primary)" stroke-width="2" /> <path d="M15 75 Q40 65 65 75" stroke="var(--color-primary)" stroke-width="1.5" fill="none" /> <circle cx="40" cy="25" r="3" fill="var(--color-primary)" />
+        </svg>
+        <h2 class="section-title font-display">Theater &amp; Dance — Stories Come Alive</h2>
+        <p class="section-description font-body">When storytellers become the story itself, true magic unfolds. Yakshagana's elaborate costumes and bold movements, Kathakali's expressive hand gestures and painted faces, Therukoothu's raw street energy, and Tholu Bommalata's enchanting shadow puppets—these traditions merge word, gesture, music, and visual splendor into complete, immersive theatrical worlds.</p><button class="watch-btn font-body">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3" />
+          </svg> Watch Video </button>
+        </div>
+      </div>
+      </section>
+    
+      <section class="story-section section-contemporary" data-index="5">
+      <div class="section-inner">
+        <span class="section-number font-display">06</span>
+        <div class="section-content fade-in">
+        <svg class="section-icon" viewbox="0 0 80 80" fill="none">
+          <rect x="20" y="15" rx="4" width="40" height="50" stroke="var(--color-primary)" stroke-width="2" fill="none" /> <circle cx="40" cy="58" r="3" stroke="var(--color-primary)" stroke-width="1.5" fill="none" /> <path d="M28 25 L52 25" stroke="var(--color-primary)" stroke-width="1" /> <path d="M28 32 L52 32" stroke="var(--color-primary)" stroke-width="1" /> <path d="M28 39 L45 39" stroke="var(--color-primary)" stroke-width="1" /> <circle cx="55" cy="20" r="8" fill="var(--color-primary)" opacity="0.3" /> <circle cx="60" cy="55" r="6" fill="var(--color-primary)" opacity="0.3" />
+        </svg>
+        <h2 class="section-title font-display">The New Age — Stories Evolve</h2>
+        <p class="section-description font-body">The ancient art never dies—it transforms. Today, podcasts carry stories to millions across the globe, spoken word poetry electrifies urban stages with revolutionary voices, and digital storytelling festivals celebrate narrative in every form. Stand-up comedians, YouTube storytellers, and audio dramatists carry forward the timeless tradition of one voice holding many hearts captive with tales of truth, humor, and wonder.</p><button class="watch-btn font-body">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3" />
+          </svg> Watch Video </button>
+        </div>
+      </div>
+      </section>
+    
+      <section class="story-section section-conclusion" data-index="6">
+      <div class="section-inner">
+        <span class="section-number font-display">∞</span>
+        <div class="section-content fade-in">
+        <svg class="section-icon" viewbox="0 0 80 80" fill="none">
+          <path d="M20 40 Q20 25 35 25 Q50 25 50 40 Q50 55 65 55 Q80 55 80 40 Q80 25 65 25 Q50 25 50 40 Q50 55 35 55 Q20 55 20 40" stroke="var(--color-primary)" stroke-width="2" fill="none" transform="translate(-10, 0) scale(0.9)" /> <circle cx="40" cy="40" r="25" stroke="var(--color-primary)" stroke-width="1" fill="none" opacity="0.3" />
+        </svg>
+        <h2 class="section-title font-display">The Story Never Ends...</h2>
+        <p class="section-description font-body">From ancient village squares lit by firelight to modern podcast studios humming with technology, the essence remains eternal and unchanged—humans gathering to share stories, to make sense of life, to heal, to inspire, and to connect across the bridges of time and space. Every story you hear carries the whispers of a thousand voices that came before. Every story you tell adds your voice to the endless river of human narrative.</p>
+        <div style="margin-top: 2rem;">
+            <a href="quiz-link.html" class="simple-portal-link font-display">
+                Enter The Scholar's Trial <span class="arrow-move">→</span>
+            </a>
+        </div>
+        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(196, 149, 106, 0.2);">
+          <p class="font-body" style="color: var(--color-text); opacity: 0.6; font-size: 1rem;">The Ancient Art of Oral Storytelling in India</p>
+          <p class="font-display" style="color: var(--color-primary); font-size: 1.5rem; margin-top: 0.5rem; animation: shimmer-bright 4s ease-in-out infinite, float-gentle 4s ease-in-out infinite;" id="footerGroup">कथावर्स</p>
+          <p class="font-body" style="color: var(--color-text); opacity: 0.6; font-size: 1rem;">Website Design & Development: Atifa Sajida</p>
+          <button id="backToHomeBtn" class="watch-btn font-body" style="margin-top: 2rem;">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /> <polyline points="9 22 9 12 15 12 15 22" />
+          </svg> Back to Home </button>
+        </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    </div>
+    
+    <div id="videoModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center;">
+    <div style="position: relative; width: 90%; max-width: 900px; background: #000; border-radius: 16px; overflow: hidden; box-shadow: 0 0 40px rgba(196, 149, 106, 0.6);">
+      <button id="closeModal" style="position: absolute; top: 10px; right: 12px; background: transparent; border: none; color: white; font-size: 28px; cursor: pointer; z-index: 10; font-weight: bold;">×</button>
+      <video id="modalVideo" controls style="width: 100%; height: auto; display: block; background: black;"></video>
+    </div>
+    </div>
+    
+    <audio id="bgMusic" loop hidden>
+      <source src="audio/classical-music.mpeg" type="audio/mpeg">
+    </audio>
+    <script src="script/script.js"></script>
+</body>
+</html>

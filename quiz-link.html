@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Scholar's Trial | Quiz Portal</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="audio/classical-music.mpeg" type="audio/mpeg">
+    </audio>
+
+    <div class="section-content">
+        <h1 class="font-display text-4xl font-bold mb-2">The Scholar's Trial</h1>
+        <p class="opacity-70 italic mb-8">Test your wisdom</p>
+
+        <div class="qr-frame">
+            <img src="qr-code.png" alt="Quiz QR Code" class="qr-image">
+        </div>
+
+        <div class="code-box" onclick="copyCode()" title="Click to Copy">
+            <span class="text-[10px] uppercase tracking-[3px] opacity-40 block mb-1">Access Code</span>
+            <div class="quiz-code font-display" id="accessCode">08298623</div>
+            <span id="copyFeedback" class="text-[10px] text-green-400 absolute bottom-1 right-2 opacity-0 transition-opacity">Copied!</span>
+        </div>
+
+        <a href="https://kahoot.it/challenge/08298623?challenge-id=ae4e129c-b42e-4760-8eee-56bf5cca5e37_1771777373150" target="_blank" class="btn-launch">
+            <span>Open Quiz Portal</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+
+        <a href="index.html" class="footer-link">← Return to the Story</a>
+    </div>
+
+    <script src="script/quiz.js"></script>
+</body>
+</html>
