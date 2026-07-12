@@ -10,7 +10,7 @@ The project represents how storytelling has evolved from traditional face-to-fac
 
 Explore the website here:
 
-🔗 https://iks-kathaverse.netlify.app/
+🔗 4t1f4.github.io/IKS-KathaVerse/
 
 ## Features
 
