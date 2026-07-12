@@ -10,7 +10,7 @@ The project represents how storytelling has evolved from traditional face-to-fac
 
 Explore the website here:
 
-🔗 [(https://iks-kathaverse.netlify.app/)](https://iks-kathaverse.netlify.app/)
+🔗 [https://iks-kathaverse.netlify.app/](https://iks-kathaverse.netlify.app/)
 
 ## Features
 
